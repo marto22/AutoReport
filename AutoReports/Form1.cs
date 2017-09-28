@@ -21,7 +21,7 @@ namespace AutoReports
         private DateTime tiempoInicioDeConsulta;
         private String DatetimeFile;
         private String nombreDeLaConsultaARealizar;
-
+        SqlCommand command;
 
         string connectionString = "Data Source=drakkar-pro.glb.itcs.hpicorp.net;" +
                                    "Initial Catalog=drakkar_pro;" +
@@ -51,7 +51,7 @@ namespace AutoReports
                 DataTable dt = new DataTable();
                 dt.TableName = "Weekly_Report";
                 Query = QueryTextBox.Text;
-                SqlCommand command = new SqlCommand(Query, connection);
+                command = new SqlCommand(Query, connection);
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                 dataAdapter.Fill(dt);
 
@@ -77,7 +77,7 @@ namespace AutoReports
 
         private async void RealizarConsultaYExportarAsync(String Filename)
         {
-            SqlCommand command =new SqlCommand();
+            command =new SqlCommand();
             toolStripProgressBar1.Value = 40;
             Query = QueryTextBox.Text;
             StatusLabel1.Text = "Realizando la consulta...";
@@ -95,7 +95,7 @@ namespace AutoReports
                     
                     command = new SqlCommand(Query, connection);
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-                    command.CommandTimeout = 5000;
+                    command.CommandTimeout = 8000;
                     dataAdapter.Fill(dt);
 
                     XLWorkbook wb = new XLWorkbook();
@@ -104,8 +104,6 @@ namespace AutoReports
                     wb.Worksheets.Add(dt);
                     DatetimeFile = DateTime.Now.ToString("yyyyMMddHHmmss");
                     wb.SaveAs("c:\\temp\\" + Filename + "_" + DatetimeFile + ".xlsx");
-
-
 
                 }
                 catch (Exception ex)
@@ -301,36 +299,41 @@ namespace AutoReports
         {
             string PathDelScript = "";
             metroDateTime1.Enabled = false;
-
+            metroLabel2.Text = "Tiempo estimado de la consulta: ";
             if (metroRadioButton1.Checked == true)
             {
                 nombreDeLaConsultaARealizar = ConstantesApp.nombreDeLaConsultaARealizarRadioBut1;
-                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\Weekly Report_LastVersion.sql";
+                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\" + ConstantesApp.nombreDelArchivoDeLaConsulta1;
+                metroLabel2.Text += ConstantesApp.duracionRb1;
             }
             else if (metroRadioButton2.Checked == true)
             {
                 nombreDeLaConsultaARealizar = ConstantesApp.nombreDeLaConsultaARealizarRadioBut2;
-                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\Export Products - UPDATED.sql";
+                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\" + ConstantesApp.nombreDelArchivoDeLaConsulta2;
+                metroLabel2.Text += ConstantesApp.duracionRb2;
             }
             else if (metroRadioButton3.Checked == true)
             {
                 nombreDeLaConsultaARealizar = ConstantesApp.nombreDeLaConsultaARealizarRadioBut3;
-                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\DSM-494 Rules_Affects to (Case).sql";
+                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\" + ConstantesApp.nombreDelArchivoDeLaConsulta3;
+                metroLabel2.Text += ConstantesApp.duracionRb3;
             }
             else if (metroRadioButton4.Checked == true)
             {
                 nombreDeLaConsultaARealizar = ConstantesApp.nombreDeLaConsultaARealizarRadioBut4;
-                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\DSM-494 Rules_AppliesTo.sql";
+                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\" + ConstantesApp.nombreDelArchivoDeLaConsulta4;
+                metroLabel2.Text += ConstantesApp.duracionRb4;
             }
             else if (metroRadioButton5.Checked == true)
             {
                 metroDateTime1.Enabled = true;
                 nombreDeLaConsultaARealizar = ConstantesApp.nombreDeLaConsultaARealizarRadioBut5;
-                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\LogTraceBackup.sql";
+                PathDelScript = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())) + @"\Scripts\" + ConstantesApp.nombreDelArchivoDeLaConsulta5;
+                metroLabel2.Text += ConstantesApp.duracionRb5;
             }
             else
             {
-                nombreDeLaConsultaARealizar = "Query";
+                nombreDeLaConsultaARealizar = "Selecciona una Query";
             }
 
 
@@ -347,8 +350,17 @@ namespace AutoReports
 
         private void toolStripSplitButton2_ButtonClick(object sender, EventArgs e)
         {
+            try
+            {
+                command.Cancel();
+            }
+            catch (Exception ex)
+            {
+                StatusLabel1.Text = ex.Message;
+            }
+
             if (connection.State != ConnectionState.Closed)
-            { 
+            {             
             connection.Close();
             }
             StatusLabel1.Text = "Conexión terminada con el servidor.";
@@ -413,6 +425,7 @@ namespace AutoReports
             {
                 //ComprobarConsultaSeleccionadaPorRadioBut();
                 RealizarConsultaYExportarAsync(nombreDeLaConsultaARealizar);
+                metroLabel2.Text += "\nIniciado: " + DateTime.Now;
             }
 
         }
