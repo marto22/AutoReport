@@ -80,12 +80,12 @@
             this.toolStripSplitButton2,
             this.toolStripProgressBar1,
             this.StatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(14, 516);
+            this.statusStrip1.Location = new System.Drawing.Point(19, 636);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 10, 0);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(3, 0, 13, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.statusStrip1.ShowItemToolTips = true;
-            this.statusStrip1.Size = new System.Drawing.Size(858, 35);
+            this.statusStrip1.Size = new System.Drawing.Size(1143, 42);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 7;
             this.statusStrip1.Text = "statusStrip1";
@@ -99,7 +99,7 @@
             this.toolStripSplitButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(25, 33);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(25, 40);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             this.toolStripSplitButton1.ToolTipText = "Reconectar";
             this.toolStripSplitButton1.Click += new System.EventHandler(this.toolStripSplitButton1_ButtonClick);
@@ -111,7 +111,7 @@
             this.toolStripSplitButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton2.Image")));
             this.toolStripSplitButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton2.Name = "toolStripSplitButton2";
-            this.toolStripSplitButton2.Size = new System.Drawing.Size(25, 33);
+            this.toolStripSplitButton2.Size = new System.Drawing.Size(25, 40);
             this.toolStripSplitButton2.Text = "toolStripSplitButton2";
             this.toolStripSplitButton2.ToolTipText = "Cerrar Conexión";
             this.toolStripSplitButton2.ButtonClick += new System.EventHandler(this.toolStripSplitButton2_ButtonClick);
@@ -119,13 +119,13 @@
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(74, 29);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(99, 36);
             // 
             // StatusLabel1
             // 
             this.StatusLabel1.BackColor = System.Drawing.Color.Transparent;
             this.StatusLabel1.Name = "StatusLabel1";
-            this.StatusLabel1.Size = new System.Drawing.Size(81, 30);
+            this.StatusLabel1.Size = new System.Drawing.Size(98, 37);
             this.StatusLabel1.Text = "Conectando...";
             // 
             // openFileDialog1
@@ -139,9 +139,9 @@
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(856, 454);
+            this.panel4.Size = new System.Drawing.Size(1141, 560);
             this.panel4.TabIndex = 11;
             // 
             // metroTabControl1
@@ -149,10 +149,10 @@
             this.metroTabControl1.Controls.Add(this.tabPage1);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(854, 346);
+            this.metroTabControl1.Size = new System.Drawing.Size(1139, 425);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
@@ -163,9 +163,9 @@
             this.tabPage1.Controls.Add(this.panel7);
             this.tabPage1.Controls.Add(this.panel6);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(846, 304);
+            this.tabPage1.Size = new System.Drawing.Size(1131, 383);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Reports";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -175,9 +175,9 @@
             this.panel7.Controls.Add(this.QueryTextBox);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(677, 304);
+            this.panel7.Size = new System.Drawing.Size(906, 383);
             this.panel7.TabIndex = 1;
             // 
             // QueryTextBox
@@ -186,10 +186,10 @@
             // 
             // 
             this.QueryTextBox.CustomButton.Image = null;
-            this.QueryTextBox.CustomButton.Location = new System.Drawing.Point(375, 2);
-            this.QueryTextBox.CustomButton.Margin = new System.Windows.Forms.Padding(2);
+            this.QueryTextBox.CustomButton.Location = new System.Drawing.Point(524, 1);
+            this.QueryTextBox.CustomButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.QueryTextBox.CustomButton.Name = "";
-            this.QueryTextBox.CustomButton.Size = new System.Drawing.Size(299, 299);
+            this.QueryTextBox.CustomButton.Size = new System.Drawing.Size(381, 381);
             this.QueryTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.QueryTextBox.CustomButton.TabIndex = 1;
             this.QueryTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -199,7 +199,7 @@
             this.QueryTextBox.Lines = new string[] {
         "Selecciona Query"};
             this.QueryTextBox.Location = new System.Drawing.Point(0, 0);
-            this.QueryTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.QueryTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QueryTextBox.MaxLength = 332767;
             this.QueryTextBox.Multiline = true;
             this.QueryTextBox.Name = "QueryTextBox";
@@ -209,7 +209,7 @@
             this.QueryTextBox.SelectionLength = 0;
             this.QueryTextBox.SelectionStart = 0;
             this.QueryTextBox.ShortcutsEnabled = true;
-            this.QueryTextBox.Size = new System.Drawing.Size(677, 304);
+            this.QueryTextBox.Size = new System.Drawing.Size(906, 383);
             this.QueryTextBox.Style = MetroFramework.MetroColorStyle.Brown;
             this.QueryTextBox.TabIndex = 11;
             this.QueryTextBox.Text = "Selecciona Query";
@@ -222,10 +222,10 @@
             // 
             this.panel6.Controls.Add(this.panel2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(677, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Location = new System.Drawing.Point(906, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(169, 304);
+            this.panel6.Size = new System.Drawing.Size(225, 383);
             this.panel6.TabIndex = 0;
             // 
             // panel2
@@ -240,9 +240,9 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(169, 304);
+            this.panel2.Size = new System.Drawing.Size(225, 383);
             this.panel2.TabIndex = 10;
             // 
             // metroDateTime1
@@ -250,12 +250,12 @@
             this.metroDateTime1.Checked = false;
             this.metroDateTime1.FontSize = MetroFramework.MetroDateTimeSize.Small;
             this.metroDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.metroDateTime1.Location = new System.Drawing.Point(14, 127);
-            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 25);
+            this.metroDateTime1.Location = new System.Drawing.Point(19, 156);
+            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 27);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.ShowCheckBox = true;
-            this.metroDateTime1.Size = new System.Drawing.Size(114, 25);
+            this.metroDateTime1.Size = new System.Drawing.Size(151, 27);
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroDateTime1.TabIndex = 17;
             this.metroDateTime1.UseStyleColors = true;
@@ -263,10 +263,10 @@
             // metroRadioButton5
             // 
             this.metroRadioButton5.AutoSize = true;
-            this.metroRadioButton5.Location = new System.Drawing.Point(14, 106);
-            this.metroRadioButton5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroRadioButton5.Location = new System.Drawing.Point(19, 130);
+            this.metroRadioButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroRadioButton5.Name = "metroRadioButton5";
-            this.metroRadioButton5.Size = new System.Drawing.Size(71, 15);
+            this.metroRadioButton5.Size = new System.Drawing.Size(77, 17);
             this.metroRadioButton5.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroRadioButton5.TabIndex = 16;
             this.metroRadioButton5.Text = "LogTrace";
@@ -277,10 +277,10 @@
             // metroRadioButton4
             // 
             this.metroRadioButton4.AutoSize = true;
-            this.metroRadioButton4.Location = new System.Drawing.Point(14, 87);
-            this.metroRadioButton4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroRadioButton4.Location = new System.Drawing.Point(19, 107);
+            this.metroRadioButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroRadioButton4.Name = "metroRadioButton4";
-            this.metroRadioButton4.Size = new System.Drawing.Size(109, 15);
+            this.metroRadioButton4.Size = new System.Drawing.Size(120, 17);
             this.metroRadioButton4.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroRadioButton4.TabIndex = 15;
             this.metroRadioButton4.Text = "Rules Applies To";
@@ -291,10 +291,10 @@
             // metroRadioButton3
             // 
             this.metroRadioButton3.AutoSize = true;
-            this.metroRadioButton3.Location = new System.Drawing.Point(14, 68);
-            this.metroRadioButton3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroRadioButton3.Location = new System.Drawing.Point(19, 84);
+            this.metroRadioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroRadioButton3.Name = "metroRadioButton3";
-            this.metroRadioButton3.Size = new System.Drawing.Size(107, 15);
+            this.metroRadioButton3.Size = new System.Drawing.Size(116, 17);
             this.metroRadioButton3.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroRadioButton3.TabIndex = 14;
             this.metroRadioButton3.Text = "Rules Affects To";
@@ -305,10 +305,10 @@
             // metroRadioButton2
             // 
             this.metroRadioButton2.AutoSize = true;
-            this.metroRadioButton2.Location = new System.Drawing.Point(14, 49);
-            this.metroRadioButton2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroRadioButton2.Location = new System.Drawing.Point(19, 60);
+            this.metroRadioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroRadioButton2.Name = "metroRadioButton2";
-            this.metroRadioButton2.Size = new System.Drawing.Size(70, 15);
+            this.metroRadioButton2.Size = new System.Drawing.Size(75, 17);
             this.metroRadioButton2.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroRadioButton2.TabIndex = 13;
             this.metroRadioButton2.Text = "Products";
@@ -319,10 +319,10 @@
             // metroRadioButton1
             // 
             this.metroRadioButton1.AutoSize = true;
-            this.metroRadioButton1.Location = new System.Drawing.Point(14, 30);
-            this.metroRadioButton1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroRadioButton1.Location = new System.Drawing.Point(19, 37);
+            this.metroRadioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroRadioButton1.Name = "metroRadioButton1";
-            this.metroRadioButton1.Size = new System.Drawing.Size(99, 15);
+            this.metroRadioButton1.Size = new System.Drawing.Size(108, 17);
             this.metroRadioButton1.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroRadioButton1.TabIndex = 12;
             this.metroRadioButton1.Text = "Weekly Report";
@@ -333,10 +333,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(56, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Query";
             // 
@@ -350,27 +349,28 @@
             this.panel3.Controls.Add(this.metroButtonCargar);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 346);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel3.Location = new System.Drawing.Point(0, 425);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(854, 106);
+            this.panel3.Size = new System.Drawing.Size(1139, 133);
             this.panel3.TabIndex = 12;
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(355, 68);
+            this.metroLabel2.Location = new System.Drawing.Point(473, 84);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(95, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(99, 20);
             this.metroLabel2.TabIndex = 11;
             this.metroLabel2.Text = "Elija un Report";
             // 
             // metroButtonEjecutar
             // 
-            this.metroButtonEjecutar.Location = new System.Drawing.Point(124, 18);
-            this.metroButtonEjecutar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroButtonEjecutar.Location = new System.Drawing.Point(165, 22);
+            this.metroButtonEjecutar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroButtonEjecutar.Name = "metroButtonEjecutar";
-            this.metroButtonEjecutar.Size = new System.Drawing.Size(106, 69);
+            this.metroButtonEjecutar.Size = new System.Drawing.Size(141, 85);
             this.metroButtonEjecutar.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroButtonEjecutar.TabIndex = 0;
             this.metroButtonEjecutar.Text = "Ejecutar";
@@ -380,20 +380,20 @@
             // 
             // metroButtonGuardar
             // 
-            this.metroButtonGuardar.Location = new System.Drawing.Point(244, 55);
-            this.metroButtonGuardar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroButtonGuardar.Location = new System.Drawing.Point(325, 68);
+            this.metroButtonGuardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroButtonGuardar.Name = "metroButtonGuardar";
-            this.metroButtonGuardar.Size = new System.Drawing.Size(106, 32);
+            this.metroButtonGuardar.Size = new System.Drawing.Size(141, 39);
             this.metroButtonGuardar.TabIndex = 10;
             this.metroButtonGuardar.Text = "Guardar Script";
             this.metroButtonGuardar.UseSelectable = true;
             // 
             // metroButtonCargar
             // 
-            this.metroButtonCargar.Location = new System.Drawing.Point(244, 18);
-            this.metroButtonCargar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.metroButtonCargar.Location = new System.Drawing.Point(325, 22);
+            this.metroButtonCargar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroButtonCargar.Name = "metroButtonCargar";
-            this.metroButtonCargar.Size = new System.Drawing.Size(106, 29);
+            this.metroButtonCargar.Size = new System.Drawing.Size(141, 36);
             this.metroButtonCargar.TabIndex = 9;
             this.metroButtonCargar.Text = "Cargar Script";
             this.metroButtonCargar.UseSelectable = true;
@@ -408,19 +408,18 @@
             this.panel1.Controls.Add(this.radioButtonLocal);
             this.panel1.Controls.Add(this.radioButtonProd);
             this.panel1.Controls.Add(this.radioButtonITG);
-            this.panel1.Location = new System.Drawing.Point(10, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel1.Location = new System.Drawing.Point(13, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 97);
+            this.panel1.Size = new System.Drawing.Size(156, 122);
             this.panel1.TabIndex = 8;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(14, 4);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.metroLabel1.Location = new System.Drawing.Point(19, 5);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(80, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(83, 20);
             this.metroLabel1.TabIndex = 6;
             this.metroLabel1.Text = "Servidor DB";
             // 
@@ -429,10 +428,10 @@
             this.radioButtonLocal.AutoSize = true;
             this.radioButtonLocal.Checked = true;
             this.radioButtonLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonLocal.Location = new System.Drawing.Point(12, 50);
-            this.radioButtonLocal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.radioButtonLocal.Location = new System.Drawing.Point(16, 62);
+            this.radioButtonLocal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonLocal.Name = "radioButtonLocal";
-            this.radioButtonLocal.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonLocal.Size = new System.Drawing.Size(63, 21);
             this.radioButtonLocal.TabIndex = 3;
             this.radioButtonLocal.TabStop = true;
             this.radioButtonLocal.Text = "Local";
@@ -443,10 +442,10 @@
             // 
             this.radioButtonProd.AutoSize = true;
             this.radioButtonProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonProd.Location = new System.Drawing.Point(12, 29);
-            this.radioButtonProd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.radioButtonProd.Location = new System.Drawing.Point(16, 36);
+            this.radioButtonProd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonProd.Name = "radioButtonProd";
-            this.radioButtonProd.Size = new System.Drawing.Size(79, 17);
+            this.radioButtonProd.Size = new System.Drawing.Size(100, 21);
             this.radioButtonProd.TabIndex = 5;
             this.radioButtonProd.Text = "Producción";
             this.radioButtonProd.UseVisualStyleBackColor = true;
@@ -456,10 +455,10 @@
             // 
             this.radioButtonITG.AutoSize = true;
             this.radioButtonITG.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonITG.Location = new System.Drawing.Point(12, 72);
-            this.radioButtonITG.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.radioButtonITG.Location = new System.Drawing.Point(16, 89);
+            this.radioButtonITG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButtonITG.Name = "radioButtonITG";
-            this.radioButtonITG.Size = new System.Drawing.Size(43, 17);
+            this.radioButtonITG.Size = new System.Drawing.Size(52, 21);
             this.radioButtonITG.TabIndex = 4;
             this.radioButtonITG.Text = "ITG";
             this.radioButtonITG.UseVisualStyleBackColor = true;
@@ -470,24 +469,24 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(14, 60);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel5.Location = new System.Drawing.Point(19, 74);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(858, 456);
+            this.panel5.Size = new System.Drawing.Size(1143, 562);
             this.panel5.TabIndex = 12;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
-            this.ClientSize = new System.Drawing.Size(886, 567);
+            this.ClientSize = new System.Drawing.Size(1181, 698);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(14, 60, 14, 16);
+            this.Padding = new System.Windows.Forms.Padding(19, 74, 19, 20);
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.Style = MetroFramework.MetroColorStyle.Brown;
             this.Text = "AutoReports";

@@ -95,7 +95,7 @@ namespace AutoReports
                     
                     command = new SqlCommand(Query, connection);
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-                    command.CommandTimeout = 8000;
+                    command.CommandTimeout = 98000;
                     dataAdapter.Fill(dt);
 
                     XLWorkbook wb = new XLWorkbook();
